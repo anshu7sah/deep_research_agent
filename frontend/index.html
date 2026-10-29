@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep / Research</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="brand">
+            <div class="mark">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </div>
+            <div class="titles">
+                <h1>Deep<span class="sep">/</span>Research</h1>
+                <p>Multi-agent web investigation</p>
+            </div>
+        </header>
+
+        <!-- Mode Selector -->
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="code">
+                Code Orchestration
+                <span class="mode-hint">Deterministic pipeline</span>
+            </button>
+            <button class="mode-btn" data-mode="llm">
+                LLM Orchestration
+                <span class="mode-hint">AI-controlled flow</span>
+            </button>
+        </div>
+
+        <!-- Query Input -->
+        <div class="query-row">
+            <input
+                type="text"
+                id="query-input"
+                placeholder="Enter your research question..."
+                autofocus
+            >
+            <button id="run-btn">RESEARCH</button>
+        </div>
+
+        <!-- Examples -->
+        <div class="examples-label">Try one</div>
+        <div class="examples">
+            <button class="example-btn">Most popular AI Agent frameworks in 2026</button>
+            <button class="example-btn">Compare React vs Svelte for modern web apps</button>
+            <button class="example-btn">Latest breakthroughs in quantum computing</button>
+        </div>
+
+        <!-- Clarification Panel (hidden by default) -->
+        <div id="clarify-panel" class="clarify-panel hidden">
+            <h3>A few questions to sharpen the research</h3>
+            <div id="clarify-questions"></div>
+            <div class="clarify-actions">
+                <button id="submit-answers" class="btn-primary">Submit Answers</button>
+                <button id="skip-answers" class="btn-secondary">Skip &mdash; Start Research</button>
+            </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div id="progress-tracker" class="progress-tracker hidden">
+            <div class="progress-steps" id="progress-steps"></div>
+            <div class="progress-log" id="progress-log"></div>
+        </div>
+
+        <!-- Report -->
+        <div id="report-container" class="report-container hidden">
+            <div id="report-content" class="report-content"></div>
+            <div class="action-bar">
+                <button id="download-pdf" class="btn-action">Download PDF</button>
+                <button id="download-md" class="btn-action">Download Markdown</button>
+                <button id="email-btn" class="btn-action">Email Report</button>
+            </div>
+            <div id="email-form" class="email-form hidden">
+                <input type="email" id="email-input" placeholder="Enter email address">
+                <button id="send-email" class="btn-primary">Send</button>
+            </div>
+        </div>
+
+        <!-- Stats Footer -->
+        <div id="stats-footer" class="stats-footer hidden"></div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

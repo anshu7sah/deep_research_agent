@@ -1,0 +1,33 @@
+[project]
+name = "deep-research"
+version = "1.0.0"
+description = "Production-grade deep research agent with dual orchestration modes"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "duckduckgo-search>=6.0",
+    "trafilatura>=1.8",
+    "weasyprint>=60.0",
+    "structlog>=24.0",
+    "python-dotenv>=1.0",
+    "markdown>=3.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",
+    "respx>=0.21",
+]
+
+[tool.setuptools.packages.find]
+include = ["models*", "agents*", "tools*", "orchestration*", "guardrails*", "services*", "api*", "evals*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "eval_001",
+        "query": "Compare the top 3 Python web frameworks for building REST APIs in 2026",
+        "expected_topics": ["FastAPI", "Django", "Flask", "performance", "ecosystem"],
+        "expected_min_sources": 5,
+        "max_allowed_time_seconds": 120,
+        "difficulty": "medium"
+    },
+    {
+        "id": "eval_002",
+        "query": "What is retrieval-augmented generation and how is it used in enterprise?",
+        "expected_topics": ["RAG", "vector database", "embedding", "enterprise", "hallucination"],
+        "expected_min_sources": 4,
+        "max_allowed_time_seconds": 120,
+        "difficulty": "easy"
+    },
+    {
+        "id": "eval_003",
+        "query": "Latest breakthroughs in quantum computing hardware 2026",
+        "expected_topics": ["qubit", "error correction", "IBM", "Google", "superconducting"],
+        "expected_min_sources": 5,
+        "max_allowed_time_seconds": 150,
+        "difficulty": "medium"
+    },
+    {
+        "id": "eval_004",
+        "query": "How do autonomous AI agents work and what are their limitations?",
+        "expected_topics": ["planning", "tool use", "memory", "hallucination", "safety"],
+        "expected_min_sources": 4,
+        "max_allowed_time_seconds": 120,
+        "difficulty": "easy"
+    },
+    {
+        "id": "eval_005",
+        "query": "Impact of large language models on software engineering productivity",
+        "expected_topics": ["code generation", "productivity", "debugging", "testing", "limitations"],
+        "expected_min_sources": 5,
+        "max_allowed_time_seconds": 120,
+        "difficulty": "medium"
+    }
+]
